@@ -583,4 +583,4 @@ function connectToVoiceChannel() {
 }
 
 // ВАШ ТОКЕН
-client.login('MTMwNzAwNzc1MTk0NzU1NDg0Ng.G-_u1i.aAqnL9pG5racuxqv3dXAx0NaMxXedEGSN7bFXE');
+client.login(process.env.DISCORD_TOKEN);
