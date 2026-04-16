@@ -7,7 +7,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // --- НАСТРОЙКИ ИИ ---
 // ВАЖНО: Храните ваш API ключ в безопасности и не публикуйте его. Лучше использовать переменные окружения.
-const GEMINI_API_KEY = 'AIzaSyAOgqZ_8qp8a9c_UQRwjWMqUdyFQhG2R24';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const YOUR_DISCORD_ID = '860615756286525481';
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); 
